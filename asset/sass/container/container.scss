@@ -1,0 +1,255 @@
+@import '../mixin/mixin.scss';
+@import '../fonction/fonction.scss';
+@import '../variables/varaibles.scss';
+
+body{
+    margin: 0px 30px 0px 30px;
+    @include ctnvert;
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+header{
+    @include ctnvert;
+    justify-content: center;
+    background-color: $color1;
+    color: black;
+    padding: 5px;
+    
+}
+
+.headerpart{
+    @include ctnvert;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav{
+    @include ctnvert;
+    justify-content: space-evenly;
+}
+
+.logctn{
+    @include ctnhor;
+    justify-content: end;
+}
+
+.navi{
+    @include ctnhor;
+    justify-content: center;
+    list-style: none;
+    height: 40px;
+    gap: 5px;
+    margin-right: 30px;
+}
+
+.pothn{
+    @include ctnvert;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+main{
+    @include ctnhor;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+    gap: 30px;
+}
+
+.maincontent{
+    @include ctnvert;
+    width: 70%;
+    justify-content:start ;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.center{
+    margin: 10;
+    text-align: center;
+    width: 100%;
+}
+
+#main1{
+    display: flex ;
+    gap: 30px;
+}
+
+.orgactn{
+    @include ctnhor;
+    justify-content: center;
+    gap: 20px;
+    object-fit: fill;
+}
+
+#main2{
+    display: none ;
+    gap: 60px;
+}
+
+#main3{
+    display: none ;
+    gap: 100px;
+}
+
+.divm3{
+    display: flex;
+    flex-direction: column;
+}
+
+.listm3{
+    text-align: start;
+    margin: 0 auto 0 auto;
+}
+
+.tarifinscrip{
+    border-spacing: 20px;
+}
+
+.suplement{
+    margin: 0 auto 0 auto;
+    border-spacing: 20px;
+}
+
+#main4{
+    display: none ;
+    justify-content: center;
+    gap: 70px;
+}
+
+#main5{
+    display: none ;
+}
+
+.popup{
+    z-index: 1;
+    display: none;
+    flex-direction: row;
+    opacity: 0.9;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: auto;
+    width: 50%;
+    margin: 30% 50% 30% 20%;
+    padding: 5 10;
+}
+
+.btnclose{
+    @include btnbasic;
+    border: $bordersize;
+    border-radius: $borderrad;
+    padding-top: 0 !important;
+}
+
+.listpop{
+    color: white;
+}
+
+.popctn{
+    width: 80%;
+    margin: auto
+}
+
+#popctn1{
+    display: flex;
+    flex-direction: column;
+}
+
+#popctn2{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside{
+    @include ctnvert;
+    gap: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.ctndates{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: $color1;
+    color: $fontcolor;
+}
+
+.footerlist{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+/*version tablette*/
+
+@media screen and (max-width: 1024px){
+    body{
+        margin: 10px;
+    }
+
+    main{
+        flex-direction: column-reverse;
+    }
+
+    .maincontent{
+        margin-left: -5%;
+    }
+
+    .logctn{
+        justify-content: flex-start;
+    }
+
+    aside{
+        flex-direction: row;
+        border: $bordersize;
+        border-radius: $borderrad;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footerlist{
+        gap: 20px;
+    }
+}
+
+/*version mobile*/
+
+@media screen and (max-width: 720px){
+    body{
+        margin: 5px;
+    }
+
+    aside{
+        justify-content: space-evenly;
+        font-size: 20px !important;
+    }
+
+    .asidetitle{
+        display: none;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+    
+    .footerlist{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

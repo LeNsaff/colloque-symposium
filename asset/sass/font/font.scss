@@ -1,0 +1,52 @@
+@import '../mixin/mixin.scss';
+@import '../fonction/fonction.scss';
+@import '../variables/varaibles.scss';
+
+h1{
+    font-family: $fontfam;
+    font-size: 50px;
+    margin: 5;
+}
+
+h2{
+    font-family: $fontfam;
+    font-size: 30px;
+    margin: 5;
+}
+
+h3{
+    font-family: $fontfam;
+    font-size: 20px;
+    margin: 5;
+}
+
+h4{
+    font-family: $fontfam;
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 5;
+}
+
+h5{
+    font-family: $fontfam;
+    font-size: 18px;
+    margin: 5;
+}
+
+p{
+    font-family: $fontfam;
+    margin: 5;
+}
+
+.poptxt{
+    position: fixed;
+    border: $bordersize;
+    border-radius: $borderrad;
+    top: 50%;
+    left: 45%;
+    padding: 20px;
+}
+
+table,ul{
+    font-family: $fontfam;
+}

@@ -1,0 +1,268 @@
+body {
+  margin: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(aqua, yellow);
+  color: aliceblue;
+  border-radius: 15px;
+}
+
+.headerpart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.logctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  position: relative;
+  gap: 50px;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  margin-left: 20px;
+}
+
+#main1 {
+  display: flex;
+}
+
+.orgactn {
+  display: flex;
+  flex-direction: row;
+}
+
+#main2 {
+  display: none;
+}
+
+#main3 {
+  display: none;
+}
+
+#popup {
+  display: none;
+  flex-direction: row;
+  padding: 30px;
+  background-color: rgba(255, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.popon {
+  display: block !important;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.ctndates {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-image: linear-gradient(aqua, yellow);
+  color: aliceblue;
+}
+
+.footerlist {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/*version tablette*/
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 10px;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  .maincontent {
+    margin-left: -5%;
+  }
+  .logctn {
+    justify-content: flex-start;
+  }
+  aside {
+    flex-direction: row;
+    border: solid 1px black;
+    border-radius: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    justify-content: end;
+  }
+  .footerlist {
+    gap: 20px;
+  }
+}
+/*version mobile*/
+@media screen and (max-width: 720px) {
+  body {
+    margin: 5px;
+  }
+  aside {
+    justify-content: space-evenly;
+    font-size: 20px !important;
+  }
+  .asidetitle {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footerlist {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+h1 {
+  font-family: "Raleway";
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Raleway";
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "Raleway";
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Raleway";
+}
+
+.poptxt {
+  position: fixed;
+  border: solid 1px black;
+  border-radius: 15px;
+  top: 50%;
+  left: 45%;
+  padding: 20px;
+}
+
+ul, a, li {
+  font-family: "Raleway";
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.logbtn {
+  width: 10%;
+  height: 25px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 10px;
+  color: aliceblue;
+  background-color: rgb(9, 9, 9);
+  padding-top: 0 !important;
+}
+
+.navbtn {
+  height: 25px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.navbtn2 {
+  height: 25px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 10px;
+  border: solid 1px black;
+  width: 90%;
+  height: 100%;
+  padding-top: 0 !important;
+}
+
+#accueil {
+  display: flex;
+}
+
+#comm {
+  display: none;
+}
+
+.orgaimg {
+  height: 200px;
+  width: 200px;
+}
+
+/*version tablette*/
+@media screen and (max-width: 1024px) {
+  .logbtn {
+    width: 20%;
+  }
+}
+/*version mobile*/
+@media screen and (max-width: 720px) {
+  .logbtn {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
