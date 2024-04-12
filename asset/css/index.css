@@ -82,6 +82,12 @@ main {
   gap: 30px;
 }
 
+.org {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .orgactn {
   display: flex;
   flex-direction: row;
@@ -92,12 +98,12 @@ main {
 
 #main2 {
   display: none;
-  gap: 60px;
+  gap: 30px;
 }
 
 #main3 {
   display: none;
-  gap: 100px;
+  gap: 30px;
 }
 
 .divm3 {
@@ -106,8 +112,11 @@ main {
 }
 
 .listm3 {
+  display: flex;
+  flex-direction: column;
   text-align: start;
   margin: 0 auto 0 auto;
+  gap: 30px;
 }
 
 .tarifinscrip {
@@ -122,7 +131,15 @@ main {
 #main4 {
   display: none;
   justify-content: center;
-  gap: 0px;
+  gap: 10px;
+}
+
+.listm4 {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0 auto 0 auto;
+  gap: 20px;
 }
 
 #main5 {
