@@ -321,6 +321,10 @@ table, ul {
   font-family: "Raleway";
 }
 
+.dates {
+  color: white;
+}
+
 button, a {
   font-family: "Raleway";
   list-style: none;
