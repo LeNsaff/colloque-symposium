@@ -20,6 +20,8 @@ header {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 10px;
+  color: white;
+  text-align: center;
 }
 
 nav {
@@ -273,38 +275,43 @@ footer {
   }
 }
 h1 {
-  font-family: "Raleway";
+  font-family: "Brygada";
   font-size: 50px;
   margin: 5;
 }
 
 h2 {
-  font-family: "Raleway";
+  font-family: "Brygada";
   font-size: 30px;
   margin: 5;
 }
 
 h3 {
-  font-family: "Raleway";
+  font-family: "Brygada";
   font-size: 20px;
   margin: 5;
 }
 
+i {
+  font-family: "Brygada";
+  font-size: 20px;
+}
+
 h4 {
-  font-family: "Raleway";
+  font-family: "Brygada";
   font-size: 20px;
   text-decoration: underline;
   margin: 5;
 }
 
 h5 {
-  font-family: "Raleway";
+  font-family: "Brygada";
   font-size: 18px;
   margin: 5;
 }
 
 p {
-  font-family: "Raleway";
+  font-family: "Brygada";
   margin: 5;
 }
 
@@ -318,15 +325,16 @@ p {
 }
 
 table, ul {
-  font-family: "Raleway";
+  font-family: "Brygada";
 }
 
 .dates {
   color: white;
+  font-style: italic;
 }
 
 button, a {
-  font-family: "Raleway";
+  font-family: "Brygada";
   list-style: none;
   text-decoration: none;
 }
