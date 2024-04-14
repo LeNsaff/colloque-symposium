@@ -153,6 +153,20 @@ caption {
   display: none;
 }
 
+.resp {
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+
+#resp1 {
+  height: 100px;
+}
+
+#resp2 {
+  height: 100px;
+}
+
 .popup {
   z-index: 1;
   display: none;
@@ -416,6 +430,16 @@ button, a {
   width: 200px;
   margin-left: 151px;
   padding-top: Opx !important;
+}
+
+.afp {
+  height: 25px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+  color: #194494;
+  cursor: pointer;
+  font-size: 10px;
 }
 
 .btns:hover {

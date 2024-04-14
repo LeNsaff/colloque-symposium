@@ -73,6 +73,11 @@ button,a{
     padding-top: Opx !important;
 }
 
+.afp{
+    @include btnbasic;
+    font-size: 10px;
+}
+
 
 .btns:hover{
     background-color: $color2;

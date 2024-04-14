@@ -148,6 +148,19 @@ caption{
     display: none ;
 }
 
+.resp{
+    @include ctnhor;
+    overflow-y: hidden;
+}
+
+#resp1{
+    height: 100px;
+}
+
+#resp2{
+    height: 100px;
+}
+
 .popup{
     z-index: 1;
     display: none;

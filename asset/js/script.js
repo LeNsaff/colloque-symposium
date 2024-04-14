@@ -13,6 +13,10 @@ var main3 = document.getElementById("main3");
 var main4 = document.getElementById("main4");
 var main5 = document.getElementById("main5");
 
+const resp1 =document.getElementById("resp1");
+const resp2 =document.getElementById("resp2");
+var afpIds = ["afp1", "afp2"];
+
 function defile() {
     var buttonId = this.id;
     console.log("Button clicked:", buttonId);
@@ -82,6 +86,21 @@ function displaypop1(){
     ctn2.style.display = 'none'
     ctn1.style.display = 'flex'
 }
+
+function aficher(){
+    var afpId = this.id;
+    console.log("Button clicked:", afpId);
+    if(afpId === 'afp1'){
+        afp1.style.display = 'none';
+        resp1.style.height ='350px';
+    } else if( afpId === 'afp2'){
+        afp2.style.display = 'none';
+        resp2.style.height ='450px';
+    }
+}
+
+document.getElementById('afp1').addEventListener('click', aficher);
+document.getElementById('afp2').addEventListener('click', aficher);
 
 function mail(){
     const nm = document.getElementById('nom').value;
