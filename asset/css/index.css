@@ -440,6 +440,8 @@ button, a {
   color: #194494;
   cursor: pointer;
   font-size: 10px;
+  margin-top: 70px;
+  font-family: "Brygada";
 }
 
 .btns:hover {

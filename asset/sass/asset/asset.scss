@@ -76,6 +76,8 @@ button,a{
 .afp{
     @include btnbasic;
     font-size: 10px;
+    margin-top: 70px;
+    font-family: $fontfam;
 }
 
 
