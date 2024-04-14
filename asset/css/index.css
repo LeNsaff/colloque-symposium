@@ -439,9 +439,8 @@ button, a {
   background-color: white;
   color: #194494;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 9px;
   margin-top: 70px;
-  font-family: "Brygada";
 }
 
 .btns:hover {
