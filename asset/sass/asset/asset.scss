@@ -66,11 +66,34 @@ button,a{
 }
 
 .btns{
-    display: none;
+    display: flex;
     @include btnbasic;
     width: 200px;
-    margin-left: 151px;
-    padding-top: Opx !important;
+    height: 60px;
+    border-radius: $borderrad;
+    border: $bordersize;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 0 !important;
+    margin: 0 auto 0  auto;
+}
+
+.centerbtn{
+    @include btnbasic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    width: 50%;
+    height: 50px;
+    margin: 0 auto 0 auto;
+    font-size: 20px
+}
+
+.centerbtn:hover{
+    background-color: $color2;
 }
 
 .afp{

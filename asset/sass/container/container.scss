@@ -166,12 +166,12 @@ caption{
     display: none;
     flex-direction: row;
     opacity: 0.9;
-    position: absolute;
+    position: fixed;
     background-color: black;
     color: white;
     padding: auto;
     width: 50%;
-    margin: 30% 50% 30% 20%;
+    margin-left: 20%;
     padding: 5 10;
 }
 
