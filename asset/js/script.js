@@ -1,3 +1,4 @@
+//vars and const
 const btns = document.getElementById('btns');
 const ctn1 = document.getElementById('popctn1');
 const ctn2 = document.getElementById('popctn2');
@@ -103,25 +104,14 @@ document.getElementById('afp1').addEventListener('click', aficher);
 document.getElementById('afp2').addEventListener('click', aficher);
 
 function mail(){
-    const nm = document.getElementById('nom').value;
-    const prenom = document.getElementById('prenom').value;
-    const email = document.getElementById('email').value;
-    const tel = document.getElementById('tel').value;
-    const pays = document.getElementById('pays').value;
-    const taf = document.getElementById('taf').value;
-    const payement = document.getElementById('payement').value;
-
-    var mess =  nm + prenom + email + tel + taf + payement + pays;
-
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "g9bytes.tech@gmail.com",
-        Password : "91FBDCEDA350A84C8DA21A1838ADC364D988",
-        To : 'kalaghanjohn@gmail.com',
-        From : "g9bytes.tech@gmail.com",
-        Subject : "Inscription",
-        Body : mess
-    }).then(
-      message => alert(message)
-    );
+    let parms ={
+        nom : document.getElementById('nom').value,
+        prenom : document.getElementById('prenom').value,
+        email : document.getElementById('email').value,
+        tel : document.getElementById('tel').value,
+        pays : document.getElementById('pays').value,
+        taf : document.getElementById('taf').value,
+        payement : document.getElementById('payement').value,
+    }
+    emailjs.send("service_lebiwhy", "template_6vxby34", parms)
 }
