@@ -112,8 +112,8 @@ function mail() {
         pays: document.getElementById('pays').value,
         taf: document.getElementById('taf').value,
         eta: document.getElementById('eta').value,
+        pres: document.getElementById('pres').value,
     };
-    debugger
     if (parms.eta == "") {
         alert("Inscription incomplete");
     }else if(parms.nom == ""){
@@ -134,6 +134,9 @@ function mail() {
     else if(parms.email==""){
     alert("Inscription incomplete");
     }
+    else if(parms.pres == ""){
+        alert("Inscription incomplete");
+        }
     else {
         alert("Inscription incomplete");
         emailjs.send("service_lebiwhy", "template_6vxby34", parms)
