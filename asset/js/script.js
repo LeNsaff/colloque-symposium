@@ -111,7 +111,7 @@ function mail(){
         tel : document.getElementById('tel').value,
         pays : document.getElementById('pays').value,
         taf : document.getElementById('taf').value,
-        payement : document.getElementById('payement').value,
+        eta : document.getElementById('eta').value,
     }
     emailjs.send("service_lebiwhy", "template_6vxby34", parms)
 }
