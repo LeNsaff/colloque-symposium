@@ -103,15 +103,26 @@ function aficher(){
 document.getElementById('afp1').addEventListener('click', aficher);
 document.getElementById('afp2').addEventListener('click', aficher);
 
-function mail(){
-    let parms ={
-        nom : document.getElementById('nom').value,
-        prenom : document.getElementById('prenom').value,
-        email : document.getElementById('email').value,
-        tel : document.getElementById('tel').value,
-        pays : document.getElementById('pays').value,
-        taf : document.getElementById('taf').value,
-        eta : document.getElementById('eta').value,
-    }
-    emailjs.send("service_lebiwhy", "template_6vxby34", parms).then(alert("Inscription envoyée"))
+function mail() {
+    let parms = {
+        nom: document.getElementById('nom').value,
+        prenom: document.getElementById('prenom').value,
+        email: document.getElementById('email').value,
+        tel: document.getElementById('tel').value,
+        pays: document.getElementById('pays').value,
+        taf: document.getElementById('taf').value,
+        eta: document.getElementById('eta').value,
+    };
+
+    if (eta !== undefined) {
+        emailjs.send("service_lebiwhy", "template_6vxby34", parms)
+            .then(function() {
+                alert("Inscription envoyée");
+            })
+            .catch(function(error) {
+                console.error("Error sending email:", error);
+            });
+    } else {
+        alert("Inscription incomplete");
+    } 
 }
