@@ -113,5 +113,5 @@ function mail(){
         taf : document.getElementById('taf').value,
         eta : document.getElementById('eta').value,
     }
-    emailjs.send("service_lebiwhy", "template_6vxby34", parms)
+    emailjs.send("service_lebiwhy", "template_6vxby34", parms).then(alert("Inscription envoyée"))
 }
