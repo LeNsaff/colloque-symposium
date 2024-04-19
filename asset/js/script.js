@@ -113,8 +113,8 @@ function mail() {
         taf: document.getElementById('taf').value,
         eta: document.getElementById('eta').value,
     };
-
-    if (eta !== undefined) {
+    debugger
+    if (parms.eta !== "") {
         emailjs.send("service_lebiwhy", "template_6vxby34", parms)
             .then(function() {
                 alert("Inscription envoyée");
