@@ -114,12 +114,31 @@ function mail() {
         eta: document.getElementById('eta').value,
     };
     debugger
-    if (parms.eta !== "") {
-        emailjs.send("service_lebiwhy", "template_6vxby34", parms)
-            .then(function() {
-                alert("Inscription envoyée");
-            })
-    } else {
+    if (parms.eta == "") {
         alert("Inscription incomplete");
+    }else if(parms.nom == ""){
+    alert("Inscription incomplete");
+    }
+    else if(parms.prenom==""){
+        alert("Inscription incomplete");
+    }
+    else if(parms.taf==""){
+    alert("Inscription incomplete");
+    }
+    else if(parms.tel==""){
+    alert("Inscription incomplete");
+    }
+    else if(parms.pays==""){
+    alert("Inscription incomplete");
+    }
+    else if(parms.email==""){
+    alert("Inscription incomplete");
+    }
+    else {
+        alert("Inscription incomplete");
+        emailjs.send("service_lebiwhy", "template_6vxby34", parms)
+        .then(function() {
+            alert("Inscription envoyée");
+        })
     } 
 }
