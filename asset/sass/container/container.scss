@@ -169,11 +169,10 @@ caption{
     position: fixed;
     background-color: black;
     color: white;
-    padding: auto;
     width: 50%;
     margin-left: 20%;
     margin-top: 5%;
-    padding: 5 10;
+    height: 700px;
 }
 
 .btnclose{
@@ -200,7 +199,7 @@ caption{
 #popctn2{
     display: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 aside{
