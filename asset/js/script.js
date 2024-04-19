@@ -119,9 +119,6 @@ function mail() {
             .then(function() {
                 alert("Inscription envoyée");
             })
-            .catch(function(error) {
-                console.error("Error sending email:", error);
-            });
     } else {
         alert("Inscription incomplete");
     } 
