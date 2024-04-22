@@ -246,9 +246,11 @@ footer {
   }
   main {
     flex-direction: column-reverse;
+    gap: 0;
   }
   .maincontent {
     margin-left: -5%;
+    gap: 0 !important;
   }
   .logctn {
     justify-content: flex-start;
@@ -259,6 +261,9 @@ footer {
     border-radius: 15px;
     width: 100%;
     justify-content: center;
+  }
+  .asidetitle {
+    display: none;
   }
   footer {
     display: flex;
@@ -276,9 +281,6 @@ footer {
   aside {
     justify-content: space-evenly;
     font-size: 20px !important;
-  }
-  .asidetitle {
-    display: none;
   }
   footer {
     flex-direction: column;
@@ -477,14 +479,45 @@ button, a {
 
 /*version tablette*/
 @media screen and (max-width: 1024px) {
-  .logbtn {
-    width: 20%;
+  aside h3 {
+    font-size: 18px;
+  }
+  aside p {
+    font-size: 13px;
+  }
+  .popup {
+    gap: 0;
+  }
+  .popup h3 {
+    font-size: 18px;
+  }
+  .popup li, .popup p {
+    font-size: 13px;
+  }
+  .navbtn2 {
+    width: 90%;
+  }
+  .navbtn2 b {
+    font-size: 14px;
   }
 }
 /*version mobile*/
 @media screen and (max-width: 720px) {
-  .logbtn {
-    width: 25%;
+  aside h3 {
+    font-size: 15px;
+  }
+  aside p {
+    font-size: 10px;
+  }
+  .popup {
+    gap: 0;
+    width: 60%;
+  }
+  .popup h3 {
+    font-size: 18px;
+  }
+  .popup li, .popup p {
+    font-size: 13px;
   }
 }
 

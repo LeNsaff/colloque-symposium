@@ -110,15 +110,59 @@ button,a{
 /*version tablette*/
 
 @media screen and (max-width: 1024px){
-    .logbtn{
-        width: 20%;
+    aside{
+        h3{
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 13px;
+        }
+    }
+
+    .popup{
+        gap: 0;
+
+        h3{
+            font-size: 18px;
+        }
+
+        li,p{
+            font-size: 13px;
+        }
+    }
+
+    .navbtn2{
+        width: 90%;
+
+        b{
+            font-size: 14px;
+        }
     }
 }
 
 /*version mobile*/
 
 @media screen and (max-width: 720px){
-    .logbtn{
-        width: 25%;
+    aside{
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .popup{
+        gap: 0;
+        width: 60%;
+        
+        h3{
+            font-size: 18px;
+        }
+
+        li,p{
+            font-size: 13px;
+        }
     }
 }

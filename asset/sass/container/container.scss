@@ -237,10 +237,12 @@ footer{
 
     main{
         flex-direction: column-reverse;
+        gap: 0;
     }
 
     .maincontent{
         margin-left: -5%;
+        gap: 0 !important; 
     }
 
     .logctn{
@@ -253,6 +255,10 @@ footer{
         border-radius: $borderrad;
         width: 100%;
         justify-content: center;
+    }
+
+    .asidetitle{
+        display: none;
     }
 
     footer{
@@ -277,9 +283,6 @@ footer{
         font-size: 20px !important;
     }
 
-    .asidetitle{
-        display: none;
-    }
     
     footer{
         flex-direction: column;

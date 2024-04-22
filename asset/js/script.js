@@ -65,7 +65,7 @@ function defile() {
     }
 }
 
-// Assign the defile function to each button
+// assigner les bouton
 buttonIds.forEach(function(buttonId) {
     document.getElementById(buttonId).addEventListener("click", defile);
 });
@@ -93,10 +93,10 @@ function aficher(){
     console.log("Button clicked:", afpId);
     if(afpId === 'afp1'){
         afp1.style.display = 'none';
-        resp1.style.height ='350px';
+        resp1.style.height ='auto';
     } else if( afpId === 'afp2'){
         afp2.style.display = 'none';
-        resp2.style.height ='450px';
+        resp2.style.height ='auto';
     }
 }
 
