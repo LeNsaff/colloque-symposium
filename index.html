@@ -4,20 +4,9 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>COLLOQUE-SYMPOSIUM</title>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                publicKey: "IdngICZ4IongDbvTa",
-            });
-        })();
-        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <link rel="stylesheet" href="asset/css/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400..700&family=Sedan:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -25,11 +14,11 @@
             <header>
                 <section>
                     <h1 class="headerpart">COLLOQUE-SYMPOSIUM INTERNATIONAL HYBRIDE</h1>
-                    <h3 class="headerpart dates">
+                    <h3 class="headerpart">
                         "Perspectives critiques sur les technologies numériques éducatives dans les universités africaines : 
                         l’enjeu de la formation des formateurs"
                     </h3>
-                    <h5 class="headerpart center">du 12 au 13 décembre 2024</h5>
+                    <h5 class="headerpart center">du 12.12.2024 au 13.12.2024</h5>
                 </section>
 
             </header>
@@ -40,7 +29,7 @@
                         <li class="navbtn"><button class="navbtn2" id="button1"><b>ACCUEIL</b></button></li>
                         <li class="navbtn"><button class="navbtn2" id="button2" ><b>ARGUMENTAIRE</b></button></li>
                         <li class="navbtn"><button class="navbtn2" id="button3"> <b>LES AXES DU COLLOQUE</b></button></li>
-                        <li class="navbtn"><button class="navbtn2" id="button4"><b>TARIFS ET INSCRIPTION</b></button></li>
+                        <li class="navbtn"><button class="navbtn2" id="button4"><b>TARIFS INSCRIPTION</b></button></li>
                         <li class="navbtn"><button class="navbtn2" id="button5"><b>INSTANCE DU COLLOQUE</b></button></li>
                     </ul>
                 </section>
@@ -50,7 +39,7 @@
 
         <main>
             <section id="main1" class="maincontent" >
-                <div class="center org">
+                <div class="center">
                     <h3>L’ECOLE NORMALE SUPERIEURE DE LIBREVILLE,</h3>
                     <h3>L’ECOLE NORMALE SUPERIEURE DE L’ENSEIGNEMENT TECHNIQUE DE LIBREVILLE,</h3>
                     <h3>L’ONG EDUCTECH AFRICA</h3>
@@ -61,7 +50,7 @@
                     <p>ORGANISENT</p>
                 </div>
 
-                <div class="org">
+                <div>
                     <h3 class="center">
                         UN COLLOQUE – SYMPOSIUM INTERNATIONAL HYBRIDE
                         SUR LE THEME :
@@ -70,14 +59,15 @@
                 </div>
                 <div>
                     <p>
-                        Suite au succès de la première édition du e-colloque international EAD 2021: 
-                        « Enseignement à distance en Afrique subsaharienne francophone en temps de Covid-19 :
-                        bilans, acquis et perspectives » (29-30 novembre 2021), l’Ecole Normale Supérieure de Libreville (ENS),
-                        l’Ecole Normale Supérieure de l’Enseignement Technique de Libreville (ENSET) et  l’ONG EDUCTECH AFRICA
-                        organisent la 2ème édition de cette rencontre qui aura lieu en mode hybride à 
-                        l’Ecole Normale Supérieure de l’Enseignement Technique de Libreville les 12 et 13 décembre 2024, 
-                        sur le thème : « Perspectives critiques sur les technologies numériques éducatives dans les 
-                        universités africaines : l’enjeu de la formation des formateurs  : ».
+                        Suite au succès de la première édition du e-colloque international EAD 
+                        2021: « Enseignement à distance en Afrique subsaharienne francophone en temps de 
+                        Covid-19 : bilans, acquis et perspectives » (29-30 novembre 2021), l’Ecole Normale 
+                        Supérieure de Libreville (ENS), l’Ecole Normale Supérieure de l’Enseignement Technique 
+                        de Libreville (ENSET), l’Université numérique du Gabon et l’EM Gabon-Université, 
+                        organisent la 2ème édition de cette rencontre qui aura lieu mode hybride à l’Ecole Normale 
+                        Supérieure de l’Enseignement Technique de Libreville les 06-07 mars 2025 à Libreville, 
+                        sur le thème : « Perspectives critiques sur les technologies numériques éducatives dans les 
+                        universités africaines ».
                     </p>
                 </div>
 
@@ -85,7 +75,8 @@
                 <div class="orgactn">
                     <img src="asset/img/ENS logo.png"  class="orgaimg">
                     <img src="asset/img/enset_logo.png"  class="orgaimg">
-                    <img src="asset/img/edutech-removebg-preview.png"  class="orgaimg">
+                    <img src="asset/img/emgabon.jpeg"  class="orgaimg">
+                    <img src="asset/img/ung.jpeg"  class="orgaimg">
                 </div>
 
             </section>
@@ -95,36 +86,40 @@
                 <h4 class="center">ARGUMENTAIRE</h4>
                 <div>                    
                     <p>
-                        Depuis ces dernières années, le numérique est devenu omniprésent dans notre vie quotidienne et 
-                        les innovations technologiques successives générées par le digital ont fini par modifier en profondeur 
-                        nos habitudes dans tous les domaines. C’est ainsi que le numérique a bouleversé le secteur de l’éducation,
-                        et tout particulièrement celui de l’enseignement supérieur où des innovations pédagogiques se développent à
-                        travers son utilisation. En effet, ce que l’on peut dire aujourd’hui sans risque de se tromper, c’est que 
-                        l’université n’a pas échappé au tournant numérique des organisations, qu’il s’agisse de l’informatisation des 
-                        processus administratifs ou bien du changement de posture des enseignants et des étudiants (IGAENR 2018). 
-                        L'intégration et l'utilisation du numérique sont de ce fait devenus des incontournables et une obligation pour 
-                        ces universités et cela à tous les niveaux (stratégie, gouvernance, gestion du changement, mise en place des 
-                        infrastructures, enseignement, recherche, services aux étudiants, rayonnement, etc.). Ainsi, de plus en plus 
-                        d’universités optent pour de nouveaux modèles d’enseignement adaptés au numérique et ce, en raison des grands 
-                        avantages qu’il procure tant aux étudiants qu’aux enseignants. Bernard Stiegler (2018) affirme à ce propos que 
-                        « la métamorphose numérique des savoirs et de l’enseignement constitue un enjeu majeur du 21e siècle et se place 
-                        au premier rang des priorités des universités et des organismes de recherche. De nouvelles conditions de publication, 
-                        de certification et d’éditorialisation se mettent en place ». 
+                        Depuis ces dernières années, le numérique est devenu omniprésent dans notre vie quotidienne et les 
+                        innovations technologiques successives générées par le digital ont fini par modifier en profondeur 
+                        nos habitudes dans tous les domaines. C’est ainsi que le numérique a bouleversé le secteur de l’éducation, 
+                        et tout particulièrement celui de l’enseignement supérieur où des innovations pédagogiques se développent 
+                        à travers son utilisation. En effet, ce que l’on peut dire aujourd’hui sans risque de se tromper, 
+                        c’est que l’université n’a pas échappé au tournant numérique des organisations, qu’il s’agisse de 
+                        l’informatisation des processus administratifs ou bien du changement de posture des enseignants et des 
+                        étudiants (IGAENR 2018). L'intégration et l'utilisation du numérique sont de ce fait devenus des 
+                        incontournables et une obligation pour ces universités et cela à tous les niveaux (stratégie, gouvernance, 
+                        gestion du changement, mise en place des infrastructures, enseignement, recherche, services aux étudiants, 
+                        rayonnement, etc.). Ainsi, de plus en plus d’universités optent pour de nouveaux modèles d’enseignement 
+                        adaptés au numérique et ce, en raison des grands avantages qu’il procure tant aux étudiants qu’aux 
+                        enseignants. Bernard Stiegler (2018) affirme à ce propos que « la métamorphose numérique des savoirs et de 
+                        l’enseignement constitue un enjeu majeur du 21e siècle et se place au premier rang des priorités des 
+                        universités et des organismes de recherche. De nouvelles conditions de publication, de certification et 
+                        d’éditorialisation se mettent en place » 
                     </p>
                 </div>
 
                 <div>                        
                     <p>
-                        Toutefois, nul besoin de rappeler le fait que l’accessibilité technologique et l’utilisation du numérique ne sont pas 
-                        les mêmes chez l’ensemble des enseignants souhaitant mettre en place des pratiques innovantes en contexte d’enseignement car, 
-                        si en Occident plusieurs enseignants expérimentés ont adopté le numérique en pédagogie universitaire, la grande majorité des 
-                        enseignants africains sont quant à eux grandement limités à cet égard. En parallèle de cette logique, la crise de la COVID-19 
-                        n’a fait que mettre en évidence les problèmes préexistants sur les plans technologiques et pédagogiques auxquels les établissements 
-                        d'enseignement supérieur de ces États ont eu à faire face (Pierre, 2020). Face aux enjeux posés par l’apprentissage à distance qui s’imposait, 
-                        beaucoup de formateurs, confrontés à de nouveaux outils du digital learning (dont ils ne maitrisaient pas toujours l’utilisation), 
-                        ont rencontré des difficultés pour passer d’un enseignement classique à un autre mode où les TICE sont omniprésentes. 
-                        À la fois pluri et interdisciplinaire, ce colloque s’adresse aux enseignants-chercheurs, aux formateurs et aux étudiants et, de façon générale, à tous 
-                        ceux qui sont attentifs aux évolutions du numérique en éducation et en formation.
+                        Toutefois, nul besoin de rappeler le fait que l’accessibilité technologique et l’utilisation du numérique 
+                        ne sont pas les mêmes chez l’ensemble des enseignants souhaitant mettre en place des pratiques innovantes 
+                        en contexte d’enseignement car, si en Occident plusieurs enseignants expérimentés ont adopté le numérique 
+                        en pédagogie universitaire, la grande majorité des enseignants africains sont quant à eux grandement 
+                        limités à cet égard. En parallèle de cette logique, la crise de la COVID-19 n’a fait que mettre en 
+                        évidence les problèmes préexistants sur les plans technologiques et pédagogiques auxquels les 
+                        établissements d'enseignement supérieur de ces États ont eu à faire face (Pierre, 2020). Face aux enjeux 
+                        posés par l’apprentissage à distance qui s’imposait, beaucoup de formateurs, confrontés à de nouveaux 
+                        outils du digital learning (dont ils ne maitrisaient pas toujours l’utilisation), ont rencontré des 
+                        difficultés pour passer d’un enseignement classique à un autre mode où les TICE sont omniprésentes. À la 
+                        fois pluri et interdisciplinaire, ce colloque s’adresse aux enseignants-chercheurs, aux formateurs et aux 
+                        étudiants et, de façon générale, à tous ceux qui sont attentifs aux évolutions du numérique en éducation 
+                        et en formation.
                     </p>
                 </div>
 
@@ -217,10 +212,9 @@
             </section>
 
             <section id="main4" class="maincontent" >
-                <h4 class="center">COÛTS ET INSCRIPTION </h4>
+                <h4 class="center">TARIFS INSCRIPTION </h4>
                 <div>
                     <table class="tarifinscrip">
-                        <caption>Avant le 30/11</caption>
                         <thead>
                             <th scope="col"></th>
                             <th scope="col">Participation en présentiel</th>
@@ -253,48 +247,8 @@
 
                             <tr>
                                 <td>Autres participants</td>
-                                <td>70 000 FCFA/ 107€</td>
-                                <td>55 000 FCFA/85€</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table class="tarifinscrip">
-                        <caption> Après le 30/11</caption>
-                        <thead>
-                            <th scope="col"></th>
-                            <th scope="col">Participation en présentiel</th>
-                            <th scope="col">Participation en ligne</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Etudiants, doctorants et retraités (ENS, ENSET)</td>
-                                <td>10 000 F CFA/15€</td>
-                                <td>5 000 FCFA/ 8€</td>
-                            </tr>
-
-                            <tr>
-                                <td>Etudiants, doctorants et retraités (autres)</td>
-                                <td>15 000 F CFA/21€</td>
-                                <td>8 000 FCFA/ 12€</td>
-                            </tr>
-
-                            <tr>
-                                <td>Enseignants, chercheurs (ENS, ENSET)</td>
-                                <td>50 000 FCFA/77€</td>
-                                <td>40 000 FCFA/52€</td>
-                            </tr>
-
-                            <tr>
-                                <td>Enseignants, chercheurs (autres)</td>
-                                <td>60 000 FCFA/92 €</td>
-                                <td>50 000 FCFA/77€</td>
-                            </tr>
-
-                            <tr>
-                                <td>Autres participants</td>
-                                <td>80 000 FCFA/ 123 €</td>
-                                <td>60 000 FCFA/92€</td>
+                                <td>70 000 FCFA/107€</td>
+                                <td>65 000 FCFA/99€</td>
                             </tr>
                         </tbody>
                     </table>
@@ -304,7 +258,7 @@
                         ni les frais de transport.
                     </p>
                     <p>Ils comprennent :</p>
-                    <ul class="listm4">
+                    <ul class="listm3">
                         <li>la participation aux activités scientifiques ;</li>
                         <li>les pauses-café ; </li>
                         <li>les déjeuners </li>
@@ -312,7 +266,7 @@
                         <li>La documentation remise aux participants</li>
                     </ul>
                 </div>
-                    <b class="sup">SUPPLEMENTS:</b>
+                    <p>SUPPLEMENTS:</p>
                     <table class="suplement">
                         <thead>
                             <th scope="col"></th>
@@ -325,12 +279,12 @@
                             </tr>
 
                             <tr>
-                                <td>Diner de gala (29 novembre 2024)</td>
+                                <td>Diner de gala (07 mars 2025)</td>
                                 <td>30.000 FCFA/ 45,81€</td>
                             </tr>
 
                             <tr>
-                                <td>Excursion (30 novembre 2024)</td>
+                                <td>Excursion (08 mars 2025)</td>
                                 <td>65 000 FCFA/ 99,10  €</td>
                             </tr>
 
@@ -351,123 +305,110 @@
                 <h3>PRESIDENTE DU COLLOQUE</h3>
                 <p>Anasthasie Obono Mba, épouse Essono (MC-HDR), Ecole Normale Supérieure de Libreville</p>
                 <h4 class="center">COMITE SCIENTIFIQUE </h4>
-                <h3>RESPONSABLE DU COMITE SCIENTIFIQUE </h3>
+                </h3>RESPONSABLE DU COMITE SCIENTIFIQUE </h3>
                 <p>Pamphile Mebiame Akono (PT), Université Omar Bongo </p>
                 <h3>MEMBRES DU COMITE SCIENTIFIQUE</h3>
-
-                <div class="resp" id="resp1">
-                    <p>
-                        Alain Jaillet (PT), Université de Cergy-Pontoise,
-                        Amel Maouchi (MC), Université Frères Mentouri Constantine 1,
-                        Annie Beka Beka Annie (MC), École Normale Supérieure de Libreville,
-                        Assembe Ella Charles Philippe (MC), Ecole Normale Supérieure de Libreville, Auguste Ndoutoumou Ndong (PT), École Normale Supérieure de Libreville,
-                        Bernardin Minko Mvé (MC), Université Omar Bongo,
-                        Clément Agbangla (MC), Université d'Abomey-Calavi, Benin,
-                        Daniel Peraya (PT), Université de Genève,
-                        Eugénie Eyang (PT), Ecole Normale Supérieure de Libreville,
-                        Florence Ngheloube (MC), Ecole Normale Supérieure de Libreville,
-                        Georges-Louis Baron Professeur émérite, Université René Descartes, Paris 5,
-                        Gilbert Nguema Endamne (PT), Ecole Normale Supérieure de Libreville,
-                        Hilaire Ndzang Nyangone (MC), Ecole Normale Supérieure de Libreville,
-                        Jacques Beziat (PT), Université de Caen Normandie,
-                        Jean Luc Rinaudo (PT), Université de Rouen-Normandie,
-                        Joseph Holenu Magenda (PT), Université de Kinshasa,
-                        Julia Ndibnu-Messina Ethé (PT), Université de Yaoundé I ,
-                        Kokou Awokou (MC), Institut National des Sciences de l’Université de Lomé,
-                        Ludovic Mewono (MC) Ecole, Normale Supérieure de Libreville,
-                        Marcelle Ibinga (MC), Ecole Normale Supérieure de Libreville,
-                        Marcelline Djeumeni Tchamabe (Dr HDR), Université de Yaounde,
-                        Nebout Arkhurst Patricia  (PT), École normale supérieure d’Abidjan,
-                        Pamphile Biyoghe (MC), École Normale Supérieure de Libreville
-                        Pierre Fonkoua (PT), ICT University,
-                        Sena Yawo Akakpo-Numado (PT), Institut National des Sciences de l’Université de Lomé,
-                        Serge Armel Attenoukon (MC), Université d’Abomey-Calavi,
-                        Sondess Zarrouk (PT),  Université de Haute Alsace,
-                        Thierry Ardouin (PT) Université de Rouen-Normandie,
-                        Véronique Solange Okome Beka (MC), Ecole Normale Supérieure de Libreville,
-                        Yvette Moussounda (MC), Ecole Normale Supérieure de Libreville
-                    </p>
-
-                    <button class="afp" id="afp1">Afficher plus</button>
-                </div>
-
+                <p>
+                    Alain Jaillet (PT), Université de Cergy-Pontoise
+                    Annie Beka Beka Annie (MC), École Normale Supérieure de Libreville
+                    Assembe Ella Charles Philippe (MC), Ecole Normale Supérieure de Libreville
+                    Auguste Ndoutoumou Ndong (PT), École Normale Supérieure de Libreville 
+                    Bernardin Minko Mvé (MC), Université Omar Bongo
+                    Clément Moupoumbou (MC), Université Omar Bongo
+                    Daniel Peraya (PT), Université de Genève
+                    Eugénie Eyang (PT), Ecole Normale Supérieure de Libreville
+                    Florence Ngueloube (MC), Ecole Normale Supérieure de Libreville 
+                    Georges-Louis Baron (PT), Professeur émérite, Université de Paris
+                    Gilbert Nguema Endamne (PT), Ecole Normale Supérieure de Libreville
+                    Hilaire Ndzang Nyangone (MC), Ecole Normale Supérieure de Libreville
+                    Jacques Beziat (PT), Université de Caen Normandie
+                    Jean Luc Rinaudo (PT), Université de Rouen-Normandie
+                    Joseph Holenu Magenda (PT), Université de Kinshasa
+                    Julia Ndibnu-Messina Ethé (PT), Université de Yaoundé I 
+                    Maouchi Amel (MC), Université Frères Mentouri, Constantine 1
+                    Marcelle Ibinga (MC), Institut Universitaire des Sciences de l'Organisation (IUSO)
+                    Nebout Arkhurst Patricia  (PT) École normale supérieure d’Abidjan (RCI)
+                    Pamphile Mebiame Akono (PT), Université Omar Bongo 
+                    Pierre Fonkoua (PT), ICT University
+                    Sena Yawo Akakpo-Numado (PT), Institut National des Sciences de l’Université de Lomé 
+                    Serge Armel Attenoukon (MC), Université d’Abomey-Calavi 
+                    Sondess Zarrouk (PT),  Université de Haute Alsace 
+                    Sylvie Bakong (MC), Université Omar Bongo 
+                    Thierry Ardouin (PT), Université de Rouen-Normandie
+                    Véronique Solange Okome Beka (MC), Ecole Normale Supérieure de Libreville
+                    Yvette Moussounda (MC), Ecole Normale Supérieure de Libreville
+                </p>
                 <h4 class="center">COMITE D’ORGANISATION </h4>
                 <h3> RESPONSABLE DU COMITE D’ORGANISATION</h3>
                 <p>Romaric Franck Quentin de Mongaryas (MC), Ecole Normale Supérieure de Libreville</p>
                 <h3>MEMBRES DU COMITE D’ORGANISATION</h3>
-
-                <div class="resp" id="resp2">
-                    <p>                       
-                        Alix Nina Mboumba, École Normale Supérieure de Libreville,
-                        Alphonse Zé Waghe, Ecole Normale Supérieure de Libreville,
-                        Anasthasie Obono Mba, Ecole Normale Supérieure de Libreville,
-                        André Christian Ebane Elang, Ecole Normale Supérieure de Libreville,
-                        Armel Nguimbi, Ecole Normale Supérieure de Libreville,
-                        Armelle Lyvane Ntsame Affane, École normale supérieure de Libreville,
-                        Bibang Assoumou, Ecole Normale Supérieure de Libreville,
-                        Camille Ambassa École Normale Supérieure de Libreville,
-                        Céline Biloghe-Ekouaghe Ecole Normale Supérieure de Libreville, Clarisse Maryse Mimbuih M'Ella Ecole Normale Supérieure de Libreville,
-                        Cyriaque Akomo, Ecole Normale Supérieure de Libreville,
-                        Dieudonné Nguema Minko, Ecole Normale Supérieure de Libreville, Eleonore Ngoma Voumbi ; École Normale Supérieure de Libreville,
-                        Elza Kogou Nzamba, Ecole Normale Supérieure de Libreville,
-                        Emmanuelle Nguema Minko Ecole, Normale Supérieure de Libreville,
-                        Euloge Bibalou, Ecole Normale Supérieure de Libreville,
-                        Ezian Elori Kokou Thibaut, Ecole Normale Supérieure de Libreville,
-                        Faustin Mezui m’Okane, École Normale Supérieure de Libreville,
-                        Germain Koumba Mouity, École Normale Supérieure de Libreville,
-                        Hervé Essono, Ecole Normale Supérieure de Libreville,
-                        Hervé Ondo Assoumou, Ecole Normale Supérieure de Libreville,
-                        Ibrahima Ndiaye, Ecole Normale Supérieure de Libreville,
-                        Jollimet Ekomy, Ecole Normale Supérieure de Libreville,  
-                        Joseph Indjendje ,Ecole Normale Supérieure d’Enseignement Technique de Libreville,
-                        Julien Ibouanga, École Normale Supérieure de Libreville,
-                        Liliane Ogowet, École Normale Supérieure de Libreville,
-                        Lipoye Mouyapou Arsène, Ecole Normale Supérieure de Libreville,
-                        Mamabani Jean Bernard, Ecole Normale Supérieure de Libreville
-                        Marina Matsanga Nziengui, Ecole Normale Supérieure de l'enseignement technique de Libreville,
-                        Mary Jospeh Nguema Ango, École Normale Supérieure de Libreville,
-                        Mbeng Essam Yannick, Ecole Normale Supérieure de Libreville,
-                        Megne m’Ella Ghislain Désiré, École Normale Supérieure de Libreville,
-                        Mexcent Zue Elibiyo, École Normale Supérieure de Libreville,
-                        Mexcin Ebane École Normale Supérieure de Libreville,
-                        Nathalie Ebaneth, Ecole Normale Supérieure de Libreville,
-                        Olga Perpétue Medza, École Normale Supérieure de Libreville,
-                        Olga Théresia Zemo, École Normale Supérieure de Libreville,
-                        Ondo Marina Myriam, Ecole Normale Supérieure de Libreville,
-                        Pélagie Mouyivou Bongo, École Normale Supérieure de Libreville,
-                        Robert Angoue Ndoutoume École Normale Supérieure de Libreville,
-                        Roger Moumba Mbina Ecole Normale Supérieure de Libreville,
-                        Rosalie Andjouomo Ecole Normale Supérieure de Libreville,
-                        Séverin Emane Mba, Ecole Normale Supérieure de Libreville ,
-                        Solange Kiki, Ecole Normale Supérieure de Libreville,
-                        Vincent Essono Assoumou, École Normale Supérieure de Libreville
-                    </p>
-
-                    <button class="afp" id="afp2" onclick="">Afficher plus</button>
-                </div>
+                <p>
+                    Achille Candice Kouawo, Institut National des Sciences de l’Université de Lomé
+                    Alix Nina Mboumba, École Normale Supérieure de Libreville 
+                    Alphonse Zé Waghe, Ecole Normale Supérieure de Libreville
+                    Anasthasie Obono Mba , Ecole Normale Supérieure de Libreville
+                    André Christian Ebane Elang, Ecole Normale Supérieure de Libreville
+                    Arnold Nguimbi, Ecole Normale Supérieure de Libreville
+                    Armel Nguimbi, Ecole Normale Supérieure de Libreville
+                    Camille Ambassa École Normale Supérieure de Libreville
+                    Céline Biloghe-Ekouaghe, Ecole Normale Supérieure de Libreville
+                    Clarisse Maryse Mimbuih M'Ella, Ecole Normale Supérieure de Libreville
+                    Clément Moupoumbou, Université Omar Bongo
+                    Dieudonné Nguema Minko, Ecole Normale Supérieure de Libreville
+                    Eleonore Ngoma Voumbi, École Normale Supérieure de Libreville
+                    Elza Kogou Nzamba, Ecole Normale Supérieure de Libreville
+                    Emmanuelle Nguema Minko, Ecole Normale Supérieure de Libreville
+                    Euloge Bibalou, Ecole Normale Supérieure de Libreville
+                    Germain Koumba Mouity, École Normale Supérieure de Libreville
+                    Gervais Owanga Biye,  Ecole Normale Supérieure de Libreville
+                    Hervé Essono, Ecole Normale Supérieure de Libreville
+                    Hervé Ondo Assoumou, Ecole Normale Supérieure de Libreville
+                    Joseph Indjendje, Ecole Normale Supérieure d’Enseignement Technique de Libreville
+                    Julien Ibouanga, École Normale Supérieure de Libreville
+                    Kokou Awokou, Institut National des Sciences de l’Université de Lomé
+                    Liliane Ogowet, École Normale Supérieure de Libreville
+                    Marcelline Djeumeni Tchamabe, École normale supérieure, Université de Yaoundé I
+                    Mary Jospeh Nguema Ango, École Normale Supérieure de Libreville
+                    Megne m’Ella Ghislain Désiré, École Normale Supérieure de Libreville
+                    Mexcent Zue Elibiyo, École Normale Supérieure de Libreville
+                    Mexcin Ebane, École Normale Supérieure de Libreville
+                    Faustin Mezui m’Okane, École Normale Supérieure de Libreville 
+                    Nathalie Ebaneth, épouse Sima Eyi, Ecole Normale Supérieure de Libreville 
+                    Olga Perpétue Medza, École Normale Supérieure de Libreville
+                    Olga Théresia Zemo , École Normale Supérieure de Libreville
+                    Pélagie Mouyivou Bongo, École Normale Supérieure de Libreville
+                    Robert Angoue Ndoutoume, École Normale Supérieure de Libreville
+                    Roger Moumba Mbina, Ecole Normale Supérieure de Libreville
+                    Rosalie Andjouomo, Ecole Normale Supérieure de Libreville 
+                    Rufin Didzambou, Ecole Normale Supérieure de Libreville
+                    Séverin Emane Mba, Ecole Normale Supérieure de Libreville 
+                    Solange Kiki, Ecole Normale Supérieure de Libreville 
+                    Théophile Bilakani, Institut National des Sciences de l’Université de Lomé
+                    Vincent Essono Assoumou, École Normale Supérieure de Libreville
+                </p>
             </section>
 
             <aside>
                 <h4 class="asidetitle">CALENDRIER</h4>
                 <section class="ctndates">
-                    <h3>20.04.2024</h3>
+                    <h3>31.01.2025</h3>
 
                     <p>
-                        Lancement de l’appel à communications
+                        Envoi des propositions de communication 
                     </p>
                 </section>
 
                 <section class="ctndates">
-                    <h3>21.04.2024</h3>
+                    <h3>15.02.2025</h3>
                     <p>
-                        Ouverture des inscriptions  
+                        Envoi des propositions de communication   
                     </p>
                 </section>
 
                 <section class="ctndates">
-                    <h3>30.07.2024</h3>
+                    <h3>25.02.2025</h3>
                     <p>
-                        Date limite d’envoi des pré-propositions de communication
+                        Diffusion des pré-actes
                     </p>
                 </section>
 
@@ -487,20 +428,14 @@
 
 
                 <section class="ctndates">
-                    <h3>12.12.2024</h3>
+                    <h3>07.03.2025</h3>
                     <p>&</p>
-                    <h3>13.12.2024</h3>
+                    <h3>07.03.2025</h3>
                     <p>
-                        Dates du colloque (Lieu du colloque : Ecole Normale Supérieure de l’Enseignement Technique de Libreville)
+                        Dates du colloque 
                     </p>
                 </section>
 
-                <section class="ctndates">
-                    <h3>30.12.2024</h3>
-                    <p>
-                        Les articles rédigés intégralement et définitifs seront à envoyer pour la publication
-                    </p>
-                </section>
 
             </aside>
 
@@ -516,34 +451,34 @@
                     <li class="listpop">CODE CLIENT : A10012018</li>
                     <li class="listpop">IBAN: 40003 04100 41001779011 12</li>
                 </ul>
-                <p>Par Western Union, – RIA ou Money Gram à : </p>
-                <p>Romaric Franck Quentin de Mongaryas - Tel : +24166185753 </p>
-                <p> ou OBONO MBA Anasthasie – Tel : +24177935050</p>
-                <p>Par Moov Money aux numéros (+241)66138195 - Airtel Money (+241) 77935050</p>
+                <p>Par Moov Money aux numéros (+241)66 83 14 94 - Airtel Money (+241)74 82 19 39</p>
+                <p>Ou par Western Union, – RIA ou Money Gram à : </p>
+                <p>MIMBUIH M'ELLA Clarisse Maryse </p>
                 <p>Annulation /Remboursement:</p>   
                 <p>
                     Un remboursement des frais payés pour les inscriptions, moins les frais d’administration de 
                     50%, sera émis après le colloque pour les annulations reçus par écrit avant le 30 novembre 2024. 
                     Aucun remboursement n'est possible pour les annulations reçues après le 30 novembre 2024
                 </p>
-                <button class="btns" id="btns" onclick="defile2()">Formulaire d'inscription</button>
+                <button class="btns" id="btns" onclick="defile2()">formulaire d'inscription</button>
             </div>  
 
             <div class="popctn" id="popctn2"> 
-                <H3>Formulaire d'inscription:</H3>  
+                <p>formulaire d'inscription:</p>  
                 <input type="text" id="nom" placeholder="Nom" required>
                 <input type="text" id="prenom" placeholder="Prénom" required>
                 <input type="text" id="email" placeholder="Email" required>
                 <input type="text" id="tel" placeholder="Téléphone" required>
-                <input type="text" id="taf" placeholder="Profession" required>
-                <input type="text" id="eta" placeholder="Etablissement ou Laboratoire" required>
                 <input type="text" id="pays" placeholder="Pays" required>
-                <select name="pres" id="pres" required>
+                <input type="text" id="taf" placeholder="Profession" required>
+                <label for="souhaitant">Je souhaite</label>
+                <select name="pets" id="pet-select" required>
                     <option value="">--Je souhaite--</option>
-                    <option value="Presenter">Presenter</option>
-                    <option value="Assister">Assister</option>
+                    <option value="dog">Presenter</option>
+                    <option value="cat">Assister</option>
                 </select>
-                <button class="centerbtn" onclick="mail()">S'incsrire</button>
+                <input type="file" id="payement" name="Confirmation de payement" accept="image/png, image/jpeg" required>
+                <button class="btns" onclick="mail()">Inscription</button>
             </div>
             
             <div class="popclose">
@@ -553,7 +488,7 @@
 
         <footer>
             <ul class="footerlist">
-                <li>numeriquecolloque2024@gmail.com</li>
+                <li></li>
             </ul>
         </footer>
 
